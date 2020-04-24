@@ -24,6 +24,8 @@ Route::get('/doadores', 'pagesController@doadores');
 
 Route::get('/hemocentros', 'pagesController@hemocentros');
 
+Route::get('/campanhas', 'pagesController@campanhas');
+
 Route::get('/requisicoes', 'pagesController@requisicoes');
 
 Route::get('/usuarios', 'pagesController@usuarios');

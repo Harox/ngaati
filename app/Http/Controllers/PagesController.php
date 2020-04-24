@@ -26,6 +26,10 @@ class PagesController extends Controller
         return view('pages.hemocentros');
     }
 
+    public function campanhas(){
+        return view('pages.campanhas');
+    }
+
     public function requisicoes(){
         return view('pages.requisicoes');
     }

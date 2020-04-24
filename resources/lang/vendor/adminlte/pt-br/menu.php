@@ -33,5 +33,6 @@ return [
 
     //homocentro
     'blood_bank'                    => 'Banco de Sangue',
+    'blood_campanha'                    => 'Campanha de Doação',
     'blood_request'                 => 'Requisições de Sangue',
 ];
