@@ -33,3 +33,6 @@ Route::get('/usuarios', 'pagesController@usuarios');
 // Route::get('/doadores', function () {
 //     return view('pages.doadores');
 // });
+
+
+Route::resource('doadors', 'DoadorsController');

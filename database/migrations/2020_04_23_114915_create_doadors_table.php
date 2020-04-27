@@ -14,17 +14,28 @@ class CreateDoadorsTable extends Migration
     public function up()
     {
         Schema::create('doadors', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('nome');
+            $table->string('apelido');
             $table->string('nacionalidade')->nullable();
-            $table->string('celular')->unique();
+            $table->date('data_nascimento');
+            $table->enum('sexo', ['F', 'M']);
+            $table->string('telefone')->unique();
             $table->string('email')->unique();
+            $table->string('bi_nr');
+            $table->integer('id_cartao');
             $table->string('provincia');
-            $table->string('endereco');
+            $table->string('cidade');
+            $table->string('bairro');
+            $table->string('av');
+            $table->string('rua');
+            $table->string('casa');
+            $table->string('quarteirao');
+            $table->string('municipio');
             $table->float('latitude', 10, 10)->nullable();
             $table->float('logitude', 10, 10)->nullable();
-            $table->date('nascimento');
             $table->dateTime('ultimaDoacao', 0)->nullable();
+            $table->dateTime('proximaDoacao', 0)->nullable();
             $table->enum('tipoSanguineo', ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'])->nullable();
             $table->string('depostoFavorito')->nullable();
             $table->float('pontos', 3, 3);
