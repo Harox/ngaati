@@ -3,141 +3,151 @@
 @section('title', 'Usuarios')
 
 @section('content_header')
-    <h1>Criar Doador</h1>
 @stop
 
 @section('content')
-    <div class="row">
-        <div class="col-md-6">
 
-            <div class="card card-info">
-                <div class="card-header">
-                  <h3 class="card-title">Input Addon</h3>
-                </div>
-                <div class="card-body">
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">@</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Username">
-                  </div>
 
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control">
-                    <div class="input-group-append">
-                      <span class="input-group-text">.00</span>
-                    </div>
-                  </div>
+  <div class="row">
+    <!-- left column -->
+    <div class="col-md-6">
 
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">$</span>
-                    </div>
-                    <input type="text" class="form-control">
-                    <div class="input-group-append">
-                      <span class="input-group-text">.00</span>
-                    </div>
-                  </div>
 
-                  <h4>With icons</h4>
+        <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Dados do Doador</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form role="form" id="quickForm" novalidate="novalidate">
+              <div class="card-body">
+                <div class="form-group">
 
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                    </div>
-                    <input type="email" class="form-control" placeholder="Email">
-                  </div>
-
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control">
-                    <div class="input-group-append">
-                      <span class="input-group-text"><i class="fas fa-check"></i></span>
-                    </div>
-                  </div>
-
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="fas fa-dollar-sign"></i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control">
-                    <div class="input-group-append">
-                      <div class="input-group-text"><i class="fas fa-ambulance"></i></div>
-                    </div>
-                  </div>
-
-                  <h5 class="mt-4 mb-2">With checkbox and radio inputs</h5>
-
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text">
-                            <input type="checkbox">
-                          </span>
+                <label>Nome Completo</label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Primeiro Nome">
                         </div>
-                        <input type="text" class="form-control">
-                      </div>
-                      <!-- /input-group -->
                     </div>
-                    <!-- /.col-lg-6 -->
-                    <div class="col-lg-6">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><input type="radio"></span>
+
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Apelído">
                         </div>
-                        <input type="text" class="form-control">
-                      </div>
-                      <!-- /input-group -->
                     </div>
-                    <!-- /.col-lg-6 -->
-                  </div>
-                  <!-- /.row -->
-
-                  <h5 class="mt-4 mb-2">With buttons</h5>
-
-                  <p>Large: <code>.input-group.input-group-lg</code></p>
-
-                  <div class="input-group input-group-lg mb-3">
-                    <div class="input-group-prepend">
-                      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-                        Action
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown-item"><a href="#">Action</a></li>
-                        <li class="dropdown-item"><a href="#">Another action</a></li>
-                        <li class="dropdown-item"><a href="#">Something else here</a></li>
-                        <li class="dropdown-divider"></li>
-                        <li class="dropdown-item"><a href="#">Separated link</a></li>
-                      </ul>
-                    </div>
-                    <!-- /btn-group -->
-                    <input type="text" class="form-control">
-                  </div>
-                  <!-- /input-group -->
-
-                  <p>Normal</p>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <button type="button" class="btn btn-danger">Action</button>
-                    </div>
-                    <!-- /btn-group -->
-                    <input type="text" class="form-control">
-                  </div>
-                  <!-- /input-group -->
-
-                  <p>Small <code>.input-group.input-group-sm</code></p>
-                  <div class="input-group input-group-sm">
-                    <input type="text" class="form-control">
-                    <span class="input-group-append">
-                      <button type="button" class="btn btn-info btn-flat">Go!</button>
-                    </span>
-                  </div>
-                  <!-- /input-group -->
                 </div>
-                <!-- /.card-body -->
+
+
+                <label>Nacionalidade</label>
+                <select class="form-control">
+                    <option>Moçambique</option>
+                    <option>Angola</option>
+                    <option>Africa do Sul</option>
+                    <option>Portugal</option>
+                    <option>Brazil</option>
+                </select>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Data de Nacimento</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                          </div>
+                          <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" im-insert="false" autocomplete="on">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Telefone</label>
+
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                          </div>
+                          <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-999&quot;" data-mask="" im-insert="true" placeholder="(258) 8XX-XXX-XX">
+                        </div>
+                        <!-- /.input group -->
+                      </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
               </div>
-        </div>
-    </div>"
+              <!-- /.card-body -->
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+
+    </div>
+    <!--/.col (left) -->
+    <!-- right column -->
+    <div class="col-md-6">
+
+        <div class="card card-primary">
+            <div class="card-header">
+              <h3 class="card-title">Quick Example <small>jQuery Validation</small></h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form role="form" id="quickForm" novalidate="novalidate">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" name="email" class="form-control is-invalid" id="exampleInputEmail1" placeholder="Enter email" autocomplete="off" aria-describedby="exampleInputEmail1-error" aria-invalid="true">
+                <span id="exampleInputEmail1-error" class="error invalid-feedback">Please enter a email address</span></div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" name="password" class="form-control is-invalid" id="exampleInputPassword1" placeholder="Password" aria-describedby="exampleInputPassword1-error">
+                <span id="exampleInputPassword1-error" class="error invalid-feedback">Please provide a password</span></div>
+                <div class="form-group mb-0">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" name="terms" class="custom-control-input" id="exampleCheck1">
+                    <label class="custom-control-label" for="exampleCheck1">I agree to the <a href="#">terms of service</a>.</label>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+    <!--/.col (right) -->
+  </div>
+
+  <div class="form-group">
+    <label>Date and time range:</label>
+
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="far fa-clock"></i></span>
+      </div>
+      <input type="text" class="form-control float-right" id="reservationtime" autocomplete="off">
+    </div>
+    <!-- /.input group -->
+  </div>
+
+
 @stop

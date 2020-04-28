@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
 
 
-   
+
 
     @include('adminlte::plugins', ['type' => 'css'])
 
@@ -28,7 +28,7 @@
     @else
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @endif
-	
+
     @yield('meta_tags')
 
     @if(config('adminlte.use_ico_only'))
@@ -62,7 +62,8 @@
 <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('vendor/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 
-
+<script src="{{ asset('vendor/chart.js/newchart.js') }}"></script>
+<script src="{{ asset('vendor/select2/newselect.js') }}"></script>
 
 @include('adminlte::plugins', ['type' => 'js'])
 
@@ -70,6 +71,7 @@
 @else
 <script src="{{ mix('js/app.js') }}"></script>
 @endif
+
 
 </body>
 </html>
